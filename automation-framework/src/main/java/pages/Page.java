@@ -6,31 +6,34 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import utils.BaseTests;
 import widgets.SearchResults;
 
 public class Page {
 
-	protected WebDriver webDriver = BaseTests.getWebDriver();
+	protected WebDriver webDriver;
 
-	By account				= By.id("account");
-	By cart					= By.id("header_cart");
-	String menuItem_Format	= ".//li[contains(@class, 'menu-item') and text() = '%s']";
-	By searchField			= By.name("s");
+	private By account				= By.id("account");
+	private By cart					= By.id("header_cart");
+	private String menuItem_Format	= ".//li[contains(@class, 'menu-item') and text() = '%s']";
+	private By searchField			= By.name("s");
+
+	public Page(WebDriver webDriver) {
+		this.webDriver = webDriver;
+	}
 
 	public CartPage clickCart(){
 		webDriver.findElement(cart).click();
-		return new CartPage();
+		return new CartPage(webDriver);
 	}
 
 	public AccountPage clickMyAccount(){
 		webDriver.findElement(account).click();
-		return new AccountPage();
+		return new AccountPage(webDriver);
 	}
 
 	public Page clickMenuItem(String menuItem){
 		findMenuItem(menuItem).click();
-		return new Page();
+		return new Page(webDriver);
 	}
 
 	public Page clickMenuItem(String menuItem, String submenuItem){
@@ -53,8 +56,6 @@ public class Page {
 
 	public Page goTo(String postUrl) {
 		webDriver.get(postUrl);
-		return new Page();
+		return new Page(webDriver);
 	}
-
-
 }

@@ -17,7 +17,7 @@ public class BaseTests {
 		setChromeDriverProperty();
 		webDriver = new ChromeDriver();
 		webDriver.get(Links.HOME);
-		homePage = new Page();
+		homePage = new Page(webDriver);
 	}
 
 	@AfterClass
