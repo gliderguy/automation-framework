@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ProductPage extends Page {
 
-	By title	= By.className("prodtitle");
+	private final By title	= By.className("prodtitle");
 
 	public ProductPage(WebDriver webDriver) {
 		super(webDriver);

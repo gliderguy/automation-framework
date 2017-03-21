@@ -13,16 +13,16 @@ import pages.ProductPage;
 
 public class SearchResults {
 
-	private WebDriver webDriver;
+	private final WebDriver webDriver;
 
-	private By addToCartButton 		= By.className("wpsc_buy_button");
-	private By currentPrice			= By.className("currentprice");
-	private By goToCheckoutButton	= By.className("go_to_checkout");
-	private By grid 				= By.xpath(".//div[contains(@class, 'product_grid_display')]");
-	private By notificationPopUp	= By.id("fancy_notification");
-	private By originalPrice		= By.className("oldprice");
-	private By products 			= By.xpath(".//div[contains(@class, 'product_grid_item')]");
-	private By productTitle 		= By.xpath(".//h2[@class='prodtitle']/a");
+	private final By addToCartButton 		= By.className("wpsc_buy_button");
+	private final By currentPrice			= By.className("currentprice");
+	private final By goToCheckoutButton	= By.className("go_to_checkout");
+	private final By grid 				= By.xpath(".//div[contains(@class, 'product_grid_display')]");
+	private final By notificationPopUp	= By.id("fancy_notification");
+	private final By originalPrice		= By.className("oldprice");
+	private final By products 			= By.xpath(".//div[contains(@class, 'product_grid_item')]");
+	private final By productTitle 		= By.xpath(".//h2[@class='prodtitle']/a");
 
 	public SearchResults(WebDriver webDriver){
 		this.webDriver = webDriver;

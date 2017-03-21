@@ -8,7 +8,7 @@ import pages.ProductPage;
 
 public class SearchStepDefs {
 
-	BaseStepDefs stepData;
+	private final BaseStepDefs stepData;
 
 	public SearchStepDefs(BaseStepDefs stepData) {
 		this.stepData = stepData;

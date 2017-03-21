@@ -4,10 +4,10 @@ public enum Products {
 
 	APPLE_TV("Apple TV", 89);
 
-	private int productId;
-	private String displayName;
+	private final int productId;
+	private final String displayName;
 
-	private Products(String displayName, int productId) {
+	Products(String displayName, int productId) {
 		this.displayName = displayName;
 		this.productId = productId;
 	}

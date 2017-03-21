@@ -10,12 +10,12 @@ import widgets.SearchResults;
 
 public class Page {
 
-	protected WebDriver webDriver;
+	protected final WebDriver webDriver;
 
-	private By account				= By.id("account");
-	private By cart					= By.id("header_cart");
-	private String menuItem_Format	= ".//li[contains(@class, 'menu-item') and text() = '%s']";
-	private By searchField			= By.name("s");
+	private final By account				= By.id("account");
+	private final By cart					= By.id("header_cart");
+	private final String menuItem_Format	= ".//li[contains(@class, 'menu-item') and text() = '%s']";
+	private final By searchField			= By.name("s");
 
 	public Page(WebDriver webDriver) {
 		this.webDriver = webDriver;

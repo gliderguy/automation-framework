@@ -12,13 +12,13 @@ public class CartPage extends Page {
 
 	private WebElement cart;
 
-	private By cartTable					= By.className("checkout_cart");
-	private By productPrice					= By.xpath(".//td[not(@class)]/span[@class='pricedisplay']");
-	private By productQuantity				= By.name("quantity");
-	private By productRow					= By.xpath(".//tr[contains(@class,'product_row')]");
-	private By productTitle					= By.xpath(".//td[contains(@class, 'wpsc_product_name')]");
-	private By productTotal					= By.xpath(".//td[contains(@class,'wpsc_product_price')]/span[@class='pricedisplay']");
-	private By productUpdateQuantityButton	= By.xpath(".//input[@type='submit' and @value='Update']");
+	private final By cartTable					= By.className("checkout_cart");
+	private final By productPrice					= By.xpath(".//td[not(@class)]/span[@class='pricedisplay']");
+	private final By productQuantity				= By.name("quantity");
+	private final  By productRow					= By.xpath(".//tr[contains(@class,'product_row')]");
+	private final By productTitle					= By.xpath(".//td[contains(@class, 'wpsc_product_name')]");
+	private final By productTotal					= By.xpath(".//td[contains(@class,'wpsc_product_price')]/span[@class='pricedisplay']");
+	private final By productUpdateQuantityButton	= By.xpath(".//input[@type='submit' and @value='Update']");
 
 
 	public CartPage(WebDriver webDriver){

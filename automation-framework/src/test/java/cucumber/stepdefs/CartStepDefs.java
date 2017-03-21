@@ -10,7 +10,7 @@ import services.CartServices;
 import utils.BaseTests;
 
 public class CartStepDefs {
-	private BaseStepDefs stepData;
+	private final BaseStepDefs stepData;
 	private CartPage cartPage;
 
 	public CartStepDefs(BaseStepDefs stepData) {
