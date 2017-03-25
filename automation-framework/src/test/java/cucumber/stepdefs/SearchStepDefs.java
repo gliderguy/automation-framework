@@ -38,7 +38,6 @@ public class SearchStepDefs {
 	@Then("^its original price should be (.*)$")
 	public void setOriginalPrice(String price){
 		Assert.assertEquals("Original price", price, stepData.searchResults.getOriginalPrice(stepData.productName));
-
 	}
 
 	@Then("^its current price should be (.*)$")
