@@ -37,7 +37,9 @@ public class backtobasicstests {
             new Human("Jack", 12)
     );
 
-    humans.sort((Human h1, Human h2) -> h1.getName().compareTo(h2.getName()));
+    humans.sort((Human h1, Human h2)
+
+            -> h1.getName().compareTo(h2.getName()));
     assertThat(humans.get(0), equalTo(new Human("Jack", 12)));
     }
 
