@@ -1,5 +1,6 @@
 import org.apache.commons.math3.random.RandomDataGenerator;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 
 import java.util.Random;
 

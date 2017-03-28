@@ -4,14 +4,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/**
- * Created by Test on 3/27/2017.
- */
 public class jacksonTests {
 
 
